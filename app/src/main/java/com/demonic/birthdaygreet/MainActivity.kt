@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val nameInput = findViewById<EditText>(R.id.nameInput)
         val name = nameInput.editableText.toString()
         val intent = Intent(this, greet::class.java)
-        intent.putExtra(NAME_EXTRA, name)
+        intent.putExtra(greet.NAME_EXTRA, name)
         startActivity(intent)
     }
 }
